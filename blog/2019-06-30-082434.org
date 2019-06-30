@@ -1,0 +1,24 @@
+* Chef Windows インストール
+
+https://qiita.com/tomoyankun/items/853a8a83f980c4a10301
+
+** Chef Development Kit インストール
+
+https://downloads.chef.io/chefdk
+
+
+** knife-zeroインストール
+
+
+chef gem install knife-zero --no-document
+
+* node のついか
+
+knife zero bootstrap test-server.com:56555 -x test_user --sudo -N test_node
+
+knife zero bootstrap test-server.com:56555 --sudo -N test_node
+
+
+* クックブック作成
+
+chef generate cookbook cookbooks/sample_cook
